@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>BioDiesel.</h2>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Transactions</li>
+        <li>Clients</li>
+        <li>Investments</li>
+        <li>Credit Cards</li>
+        <li>Loans</li>
+        <li>Services</li>
+        <li>My Privileges</li>
+        <li>Setting</li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <input type="text" placeholder="Search for something..." />
+        <div class="user-icon">
+          <img src="https://i.pravatar.cc/40" alt="User" />
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card orange">
+          <h4>My Balance</h4>
+          <p>$12,750</p>
+        </div>
+        <div class="card blue">
+          <h4>Income</h4>
+          <p>$5,600</p>
+        </div>
+        <div class="card pink">
+          <h4>Expense</h4>
+          <p>$3,460</p>
+        </div>
+        <div class="card green">
+          <h4>Total Saving</h4>
+          <p>$7,920</p>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="left">
+          <div class="subscribers-box">
+            <h3>Last Subscribers</h3>
+            <div class="subscriber">John Doe - Gold - Pending - <span class="red">-$150</span></div>
+            <div class="subscriber">John Doe - Silver - Completed - <span class="red">-$340</span></div>
+            <div class="subscriber">John Doe - Platinum - Completed - <span class="green">+$780</span></div>
+          </div>
+
+          <div class="chart-box">
+            <h3>Debit & Credit Overview</h3>
+            <canvas id="financeChart"></canvas>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="mycard">
+            <h4>My Card</h4>
+            <div class="card-box">
+              <p class="balance">$5,756</p>
+              <p class="holder">CARD HOLDER: Eddy Cusmita</p>
+              <p class="valid">VALID THRU: 12/22</p>
+              <p class="number">3778 **** **** 1234</p>
+            </div>
+          </div>
+
+          <div class="subscribers-type">
+            <h4>Total Subscribers</h4>
+            <p>Silver (6 Months) - 450 Members</p>
+            <p>Gold (6 Months) - 160 Members</p>
+            <p>Platinum (12 Months) - 1085 Members</p>
+            <p>VIP (18 Months) - 90 Members</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
